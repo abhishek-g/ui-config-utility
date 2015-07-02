@@ -1,0 +1,130 @@
+{
+    "rows": [
+        {
+            "rowCss":"",
+            "columns":[
+                {
+                    "column":"col-md-4 col-sm-12",
+                    "columnCss":"extraCSS",
+                    "isPanel":false,
+                    "widget": {
+                        "widgetName": "Testing",
+                        "directive": "testing-dynamic-creation"
+                    }
+                },
+                {
+                    "column":"col-md-4 col-sm-12",
+                    "columnCss":"extraCSS",
+                    "isPanel":false,
+                    "widget": {
+                        "widgetName": "Testing",
+                        "directive": "testing-dynamic-creation",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise"
+                            }
+                        ],
+                        "bodyClasses": "class1 class2 class3",
+                        "headerClasses": "class1 class2 class3",
+                        "panelClasses": "class1 class2 class3"
+                    }
+                },
+                {
+                    "column":"col-md-4 col-sm-12",
+                    "columnCss":"extraCSS",
+                    "isPanel":false,
+                    "widget": {
+                        "widgetName": "Testing",
+                        "directive": "testing-dynamic-creation",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise"
+                            }
+                        ],
+                        "bodyClasses": "class1 class2 class3",
+                        "headerClasses": "class1 class2 class3",
+                        "panelClasses": "class1 class2 class3"
+                    }
+                }
+            ]
+        },
+        {
+            "rowCss":"",
+            "columns":[
+                {
+                    "column":"col-md-4 col-sm-12",
+                    "columnCss":"extraCSS",
+                    "widget": {
+                        "widgetName": "Testing",
+                        "directive": "testing-dynamic-creation",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise"
+                            }
+                        ],
+                        "bodyClasses": "class1 class2 class3",
+                        "headerClasses": "class1 class2 class3",
+                        "panelClasses": "class1 class2 class3"
+                    }
+                },
+                {
+                    "column":"col-md-4 col-sm-12",
+                    "columnCss":"extraCSS",
+                    "widget": {
+                        "widgetName": "Testing",
+                        "directive": "testing-dynamic-creation",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise"
+                            }
+                        ],
+                        "bodyClasses": "class1 class2 class3",
+                        "headerClasses": "class1 class2 class3",
+                        "panelClasses": "class1 class2 class3"
+                    }
+                },
+                {
+                    "column":"col-md-4 col-sm-12",
+                    "columnCss":"extraCSS",
+                    "widget": {
+                        "widgetName": "Testing",
+                        "directive": "testing-dynamic-creation",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise"
+                            }
+                        ],
+                        "bodyClasses": "class1 class2 class3",
+                        "headerClasses": "class1 class2 class3",
+                        "panelClasses": "class1 class2 class3"
+                    }
+                }
+            ]
+        }
+    ]
+}
