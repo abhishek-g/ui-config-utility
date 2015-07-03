@@ -1,0 +1,44 @@
+{{#each rows}}
+    <div class="row">
+        {{#each columns}}
+            <div class="{{column}} {{columnCss}}">
+                {{#if widget.isPanel}}
+                    <div class="panel panel-default {{classHelper widget.panelClasses}}">
+                        <div class="panel-heading {{classHelper widget.headerClasses}}">
+                            <h3 class="panel-title">
+                                {{widget.widgetName}}
+                            </h3>
+                            <ul class="panel-controls">
+                                {{#each widget.widgetControls}}
+                                    <li class="{{classNames}}" {{directive}}></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="panel-body {{classHelper widget.bodyClasses}}">
+                            <div {{widget.directive}}></div>
+                        </div>
+                    </div>
+                {{/if}}
+                {{#if widget.isSimple}}
+                    <div class="widget widget-default widget-item-icon shadow-helper">
+                        <div class="widget-item-left marhelp"><span class="{{widget.imageLink}}"></span>
+                        </div>
+                        <div class="widget-data padhelp">
+                            <div class="widget-int num-count lynhgt">
+                                <span class="font24">{{widget.widgetValue}}</span>
+                            </div>
+                            <div class="widget-title font12">{{widget.widgetName}} </div>
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+        {{/each}}
+    </div>
+{{/each}}
+
+
+
+
+
+
+

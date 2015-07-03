@@ -5,7 +5,7 @@
 module.exports = function(grunt){
 
 
-    var config = grunt.file.readJSON('tasks/bootstrap/resources/config.json');
+    var config = grunt.file.readJSON('tasks/bootstrap/resources/configs/config.json');
 
     function execute(){
 
@@ -23,7 +23,7 @@ module.exports = function(grunt){
                 main:{
                     files :[
                         {
-                            src: 'tasks/bootstrap/resources/source.html.hbs',
+                            src: 'tasks/bootstrap/resources/source-templates/source.html.hbs',
                             dest: 'public/templates/views/source.html'
                         },
                         {
