@@ -4,13 +4,69 @@
             "rowCss":"",
             "columns":[
                 {
-                    "column":"col-md-4 col-sm-12",
+                    "column":"col-md-2 col-sm-4",
                     "columnCss":"extraCSS",
+                    "isSimple":true,
                     "widget": {
-                        "isSimple":true,
-                        "widgetName": "Testing",
-                        "imageLink": "theme-img-site",
-                        "widgetValue":678
+                        "widgetCss":"widget-item-icon shadow-helper",
+                        "widgetName": "Active Power",
+                        "imageLink": "theme-img-pk-pwr",
+                        "widgetValue":"{{totalPower | number : 2}}"
+                    }
+                },
+                {
+                    "column":"col-md-2 col-sm-4",
+                    "columnCss":"extraCSS",
+                    "isSimple":true,
+                    "widget": {
+                        "widgetCss":"widget-item-icon shadow-helper",
+                        "widgetName": "Total Capacity",
+                        "imageLink": "theme-img-tot-capacity",
+                        "widgetValue":"{{totalCapacity | number : 2}}"
+                    }
+                },
+                {
+                    "column":"col-md-2 col-sm-4",
+                    "columnCss":"extraCSS",
+                    "isSimple":true,
+                    "widget": {
+                        "widgetCss":"widget-item-icon shadow-helper",
+                        "widgetName": "Total Generation",
+                        "imageLink": "theme-img-tot-gen",
+                        "widgetValue":"{{totGen | number : 2}}"
+                    }
+                },
+                {
+                    "column":"col-md-2 col-sm-4",
+                    "columnCss":"extraCSS",
+                    "isSimple":true,
+                    "widget": {
+                        "widgetCss":"widget-item-icon shadow-helper",
+                        "widgetName": "Today Generation",
+                        "imageLink": "theme-img-tod-gen",
+                        "widgetValue":"{{todGen | number : 2}}"
+                    }
+                },
+                {
+                    "column":"col-md-2 col-sm-4",
+                    "columnCss":"extraCSS",
+                    "isSimple":true,
+                    "widget": {
+                        "widgetCss":"widget-item-icon shadow-helper",
+                        "widgetName": "Performance Ratio",
+                        "imageLink": "theme-img-PR",
+                        "widgetValue":"{{pr}}"
+                    }
+                },
+                {
+                    "column":"col-md-2 col-sm-4",
+                    "columnCss":"extraCSS",
+                    "isSimple":true,
+                    "widget": {
+                        "widgetCss":"widget-item-icon shadow-helper",
+                        "widgetName": "Active Power",
+                        "imageLink": "theme-img-pk-pwr",
+                        "widgetValue":"{{totalPower}}"
                     }
                 }
             ]
@@ -22,10 +78,10 @@
 
                     "column":"col-md-4 col-sm-12",
                     "columnCss":"extraCSS",
+                    "directive": "testing-dynamic-creation",
+                    "isPanel":true,
                     "widget": {
-                        "isPanel":true,
                         "widgetName": "Testing",
-                        "directive": "testing-dynamic-creation",
                         "widgetControls": [
                             {
                                 "classNames": "",
@@ -33,12 +89,20 @@
                             },
                             {
                                 "classNames": "",
-                                "directive": "filter-maximise"
+                                "directive": "filter-maximise=''"
                             }
                         ],
-                        "bodyClasses": "class1 class2 class3",
-                        "headerClasses": "class1 class2 class3",
-                        "panelClasses": "class1 class2 class3"
+                        "bodyClasses": "layout-testing-widget",
+                        "headerClasses": "",
+                        "panelClasses": "",
+                        "directive":{
+                            "tableId":"table3",
+                            "type":"custom-table",
+                            "containerCss":"table-responsive",
+                            "columns":["Name","Age","Class","Division"],
+                            "columndefs":"columndefs",
+                            "rowsObject":"data"
+                        }
                     }
                 }
             ]

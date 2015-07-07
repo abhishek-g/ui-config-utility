@@ -16,6 +16,10 @@ module.exports = function(grunt){
                     helpers: {                  // provide handlebars helper functions
                         classHelper: function (value) {
                             return  value ;
+                        },
+                        jsonHelper : function(value){
+                            console.log("JSON STRING" , JSON.stringify(value));
+                            return JSON.stringify(value);
                         }
                     },
                     data:config

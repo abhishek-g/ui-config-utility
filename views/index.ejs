@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html ng-app="ui-test">
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/stylesheets/css/theme-default.css">
+    <link rel="stylesheet" href="/modules/global/css/global.css">
+    <link rel="stylesheet" href="/modules/dashboard/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+</head>
+<body ng-controller="TestController">
+
+
+<div class="container-fluid" ng-include="'/templates/views/source.html'"></div>
+
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/javascripts/app/app.js"></script>
+</body>
 </html>

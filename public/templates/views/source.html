@@ -1,31 +1,95 @@
     <div class="row">
-            <div class="col-md-4 col-sm-12 extraCSS">
+            <div class="col-md-2 col-sm-4 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
-                        <div class="widget-item-left marhelp"><span class="theme-img-site"></span>
+                        <div class="widget-item-left marhelp"><span class="theme-img-pk-pwr"></span>
                         </div>
                         <div class="widget-data padhelp">
                             <div class="widget-int num-count lynhgt">
-                                <span class="font24">678</span>
+                                <span class="font24">{{totalPower | number : 2}}</span>
                             </div>
-                            <div class="widget-title font12">Testing </div>
+                            <div class="widget-title font12">Active Power </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2 col-sm-4 extraCSS">
+                    <div class="widget widget-default widget-item-icon shadow-helper">
+                        <div class="widget-item-left marhelp"><span class="theme-img-tot-capacity"></span>
+                        </div>
+                        <div class="widget-data padhelp">
+                            <div class="widget-int num-count lynhgt">
+                                <span class="font24">{{totalCapacity | number : 2}}</span>
+                            </div>
+                            <div class="widget-title font12">Total Capacity </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2 col-sm-4 extraCSS">
+                    <div class="widget widget-default widget-item-icon shadow-helper">
+                        <div class="widget-item-left marhelp"><span class="theme-img-tot-gen"></span>
+                        </div>
+                        <div class="widget-data padhelp">
+                            <div class="widget-int num-count lynhgt">
+                                <span class="font24">{{totGen | number : 2}}</span>
+                            </div>
+                            <div class="widget-title font12">Total Generation </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2 col-sm-4 extraCSS">
+                    <div class="widget widget-default widget-item-icon shadow-helper">
+                        <div class="widget-item-left marhelp"><span class="theme-img-tod-gen"></span>
+                        </div>
+                        <div class="widget-data padhelp">
+                            <div class="widget-int num-count lynhgt">
+                                <span class="font24">{{todGen | number : 2}}</span>
+                            </div>
+                            <div class="widget-title font12">Today Generation </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2 col-sm-4 extraCSS">
+                    <div class="widget widget-default widget-item-icon shadow-helper">
+                        <div class="widget-item-left marhelp"><span class="theme-img-PR"></span>
+                        </div>
+                        <div class="widget-data padhelp">
+                            <div class="widget-int num-count lynhgt">
+                                <span class="font24">{{pr}}</span>
+                            </div>
+                            <div class="widget-title font12">Performance Ratio </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2 col-sm-4 extraCSS">
+                    <div class="widget widget-default widget-item-icon shadow-helper">
+                        <div class="widget-item-left marhelp"><span class="theme-img-pk-pwr"></span>
+                        </div>
+                        <div class="widget-data padhelp">
+                            <div class="widget-int num-count lynhgt">
+                                <span class="font24">{{totalPower}}</span>
+                            </div>
+                            <div class="widget-title font12">Active Power </div>
                         </div>
                     </div>
             </div>
     </div>
     <div class="row">
             <div class="col-md-4 col-sm-12 extraCSS">
-                    <div class="panel panel-default class1 class2 class3">
-                        <div class="panel-heading class1 class2 class3">
+                    <div testing-dynamic-creation class="panel panel-default ">
+                        <div class="panel-heading ">
                             <h3 class="panel-title">
                                 Testing
                             </h3>
                             <ul class="panel-controls">
-                                    <li class="" filter-date></li>
-                                    <li class="" filter-maximise></li>
+                                    <li class="" filter-date>
+                                    </li>
+                                    <li class="" filter-maximise=&#x27;&#x27;>
+                                    </li>
+
                             </ul>
                         </div>
-                        <div class="panel-body class1 class2 class3">
-                            <div testing-dynamic-creation></div>
+                        <div class="panel-body layout-testing-widget">
+                            <div class="layout-full-width table-responsive" custom-table opts="[&quot;Name&quot;,&quot;Age&quot;,&quot;Class&quot;,&quot;Division&quot;]"
+                                    rows="data" tableId="table3" columndefs="columndefs"></div>
                         </div>
                     </div>
             </div>

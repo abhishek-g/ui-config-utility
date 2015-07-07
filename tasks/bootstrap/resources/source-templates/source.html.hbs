@@ -2,25 +2,28 @@
     <div class="row">
         {{#each columns}}
             <div class="{{column}} {{columnCss}}">
-                {{#if widget.isPanel}}
-                    <div class="panel panel-default {{classHelper widget.panelClasses}}">
-                        <div class="panel-heading {{classHelper widget.headerClasses}}">
+                {{#if isPanel}}
+                    <div {{directive}} class="panel panel-default {{widget.panelClasses}}">
+                        <div class="panel-heading {{widget.headerClasses}}">
                             <h3 class="panel-title">
                                 {{widget.widgetName}}
                             </h3>
                             <ul class="panel-controls">
                                 {{#each widget.widgetControls}}
-                                    <li class="{{classNames}}" {{directive}}></li>
+                                    <li class="{{classNames}}" {{directive}}>
+                                    </li>
                                 {{/each}}
+
                             </ul>
                         </div>
-                        <div class="panel-body {{classHelper widget.bodyClasses}}">
-                            <div {{widget.directive}}></div>
+                        <div class="panel-body {{widget.bodyClasses}}">
+                            <div class="layout-full-width {{widget.directive.containerCss}}" {{widget.directive.type}} opts="{{jsonHelper widget.directive.columns}}"
+                                    rows="{{widget.directive.rowsObject}}" tableId="{{widget.directive.tableId}}" columndefs="{{widget.directive.columndefs}}"></div>
                         </div>
                     </div>
                 {{/if}}
-                {{#if widget.isSimple}}
-                    <div class="widget widget-default widget-item-icon shadow-helper">
+                {{#if isSimple}}
+                    <div class="widget widget-default {{classHelper widget.widgetCss}}">
                         <div class="widget-item-left marhelp"><span class="{{widget.imageLink}}"></span>
                         </div>
                         <div class="widget-data padhelp">
