@@ -1,5 +1,5 @@
     <div class="row">
-            <div class="col-md-2 col-sm-4 extraCSS">
+            <div class="col-md-2 col-sm-4 col-xs-12 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
                         <div class="widget-item-left marhelp"><span class="theme-img-pk-pwr"></span>
                         </div>
@@ -11,7 +11,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-md-2 col-sm-4 extraCSS">
+            <div class="col-md-2 col-sm-4 col-xs-12 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
                         <div class="widget-item-left marhelp"><span class="theme-img-tot-capacity"></span>
                         </div>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-md-2 col-sm-4 extraCSS">
+            <div class="col-md-2 col-sm-4 col-xs-12 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
                         <div class="widget-item-left marhelp"><span class="theme-img-tot-gen"></span>
                         </div>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-md-2 col-sm-4 extraCSS">
+            <div class="col-md-2 col-sm-4 col-xs-12 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
                         <div class="widget-item-left marhelp"><span class="theme-img-tod-gen"></span>
                         </div>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-md-2 col-sm-4 extraCSS">
+            <div class="col-md-2 col-sm-4 col-xs-12 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
                         <div class="widget-item-left marhelp"><span class="theme-img-PR"></span>
                         </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-md-2 col-sm-4 extraCSS">
+            <div class="col-md-2 col-sm-4 col-xs-12 extraCSS">
                     <div class="widget widget-default widget-item-icon shadow-helper">
                         <div class="widget-item-left marhelp"><span class="theme-img-pk-pwr"></span>
                         </div>
@@ -73,7 +73,7 @@
             </div>
     </div>
     <div class="row">
-            <div class="col-md-4 col-sm-12 extraCSS">
+            <div class="col-md-4 col-sm-12 col-xs-12 extraCSS">
                     <div testing-dynamic-creation class="panel panel-default ">
                         <div class="panel-heading ">
                             <h3 class="panel-title">
@@ -88,8 +88,111 @@
                             </ul>
                         </div>
                         <div class="panel-body layout-testing-widget">
-                            <div class="layout-full-width table-responsive" custom-table opts="[&quot;Name&quot;,&quot;Age&quot;,&quot;Class&quot;,&quot;Division&quot;]"
+                            <div class="spinner" ng-show="loading">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!loading" class="layout-full-width table-responsive" custom-table opts="[&quot;Name&quot;,&quot;Age&quot;,&quot;Class&quot;,&quot;Division&quot;]"
                                     rows="data" tableId="table3" columndefs="columndefs"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 extraCSS">
+                    <div testing-dynamic-charts class="panel panel-default ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title">
+                                Testing Charts
+                            </h3>
+                            <ul class="panel-controls">
+                                    <li class="" filter-date>
+                                    </li>
+                                    <li class="" filter-maximise=&#x27;&#x27;>
+                                    </li>
+
+                            </ul>
+                        </div>
+                        <div class="panel-body layout-testing-widget">
+                            <div class="spinner" ng-show="loading">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!loading" class="layout-full-width " ui-simple-graph></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 extraCSS">
+                    <div testing-dynamic-charts-date-time=&#x27;&#x27; class="panel panel-default ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title">
+                                Testing Charts With Date Time Axis
+                            </h3>
+                            <ul class="panel-controls">
+                                    <li class="" filter-date>
+                                    </li>
+                                    <li class="" filter-maximise=&#x27;&#x27;>
+                                    </li>
+
+                            </ul>
+                        </div>
+                        <div class="panel-body layout-testing-widget">
+                            <div class="spinner" ng-show="loading">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!loading" class="layout-full-width " ui-graph-datetime></div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12 extraCSS">
+                    <div testing-progress-bars=&#x27;&#x27; class="panel panel-default ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title">
+                                Testing
+                            </h3>
+                            <ul class="panel-controls">
+                                    <li class="" filter-date>
+                                    </li>
+                                    <li class="" filter-maximise=&#x27;&#x27;>
+                                    </li>
+
+                            </ul>
+                        </div>
+                        <div class="panel-body layout-testing-widget">
+                            <div class="spinner" ng-show="loading">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!loading" class="layout-full-width row" progress-bars></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 extraCSS">
+                    <div  class="panel panel-default ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title">
+                                Testing
+                            </h3>
+                            <ul class="panel-controls">
+                                    <li class="" filter-date>
+                                    </li>
+                                    <li class="" filter-maximise=&#x27;&#x27;>
+                                    </li>
+
+                            </ul>
+                        </div>
+                        <div class="panel-body layout-testing-widget">
+                            <div class="spinner" ng-show="loading">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!loading" class="layout-full-width row" ui-tabs></div>
                         </div>
                     </div>
             </div>

@@ -1,0 +1,11 @@
+<div class="progress-list" ng-repeat="bar in bars track by $index">
+    <div class="pull-left"><strong style="font-size: 10pt">{{bar.subject}}</strong>
+    </div>
+    <div class="pull-right"><strong style="font-size: 10pt">{{bar.value | number : 2}}</strong>
+    </div>
+    <div class="progress progress-small">
+        <div class="progress-bar progress-bar-success" progress-value="" value="bar.value" min="0" max="2.5" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100">
+            {{bar.value}}
+        </div>
+    </div>
+</div>

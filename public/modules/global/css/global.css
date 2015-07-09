@@ -449,4 +449,6 @@ div.nodatafound > span {
 
 .layout-full-width{
     width:100%;
+    margin: 0 auto;
+    height:98%
 }
