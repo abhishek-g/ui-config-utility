@@ -2,7 +2,7 @@
     <div class="row">
         {{#each columns}}
             <div class="{{column}} {{columnCss}}">
-                {{#if isPanel}}
+                {{#if isPanelTable}}
                     <div {{directive}} class="panel panel-default {{widget.panelClasses}}">
                         <div class="panel-heading {{widget.headerClasses}}">
                             <h3 class="panel-title">
@@ -17,8 +17,85 @@
                             </ul>
                         </div>
                         <div class="panel-body {{widget.bodyClasses}}">
-                            <div class="layout-full-width {{widget.directive.containerCss}}" {{widget.directive.type}} opts="{{jsonHelper widget.directive.columns}}"
+                            <div class="spinner" ng-show="{{widget.isLoading}}">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!{{widget.isLoading}}" class="layout-full-width {{widget.directive.containerCss}}" {{widget.directive.type}} opts="{{jsonHelper widget.directive.columns}}"
                                     rows="{{widget.directive.rowsObject}}" tableId="{{widget.directive.tableId}}" columndefs="{{widget.directive.columndefs}}"></div>
+                        </div>
+                    </div>
+                {{/if}}
+                {{#if isPanelChart}}
+                    <div {{directive}} class="panel panel-default {{widget.panelClasses}}">
+                        <div class="panel-heading {{widget.headerClasses}}">
+                            <h3 class="panel-title">
+                                {{widget.widgetName}}
+                            </h3>
+                            <ul class="panel-controls">
+                                {{#each widget.widgetControls}}
+                                    <li class="{{classNames}}" {{directive}}>
+                                    </li>
+                                {{/each}}
+
+                            </ul>
+                        </div>
+                        <div class="panel-body {{widget.bodyClasses}}">
+                            <div class="spinner" ng-show="{{widget.isLoading}}">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!{{widget.isLoading}}" class="layout-full-width {{widget.directive.containerCss}}" {{widget.directive.type}}></div>
+                        </div>
+                    </div>
+                {{/if}}
+                {{#if isPanelProgress}}
+                    <div {{directive}} class="panel panel-default {{widget.panelClasses}}">
+                        <div class="panel-heading {{widget.headerClasses}}">
+                            <h3 class="panel-title">
+                                {{widget.widgetName}}
+                            </h3>
+                            <ul class="panel-controls">
+                                {{#each widget.widgetControls}}
+                                    <li class="{{classNames}}" {{directive}}>
+                                    </li>
+                                {{/each}}
+
+                            </ul>
+                        </div>
+                        <div class="panel-body {{widget.bodyClasses}}">
+                            <div class="spinner" ng-show="{{widget.isLoading}}">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!{{widget.isLoading}}" class="layout-full-width {{widget.directive.containerCss}}" {{widget.directive.type}}></div>
+                        </div>
+                    </div>
+                {{/if}}
+                {{#if isPanelTabs}}
+                    <div {{directive}} class="panel panel-default {{widget.panelClasses}}">
+                        <div class="panel-heading {{widget.headerClasses}}">
+                            <h3 class="panel-title">
+                                {{widget.widgetName}}
+                            </h3>
+                            <ul class="panel-controls">
+                                {{#each widget.widgetControls}}
+                                    <li class="{{classNames}}" {{directive}}>
+                                    </li>
+                                {{/each}}
+
+                            </ul>
+                        </div>
+                        <div class="panel-body {{widget.bodyClasses}}">
+                            <div class="spinner" ng-show="{{widget.isLoading}}">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                            <div ng-show="!{{widget.isLoading}}" class="layout-full-width {{widget.directive.containerCss}}" {{widget.directive.type}}></div>
                         </div>
                     </div>
                 {{/if}}

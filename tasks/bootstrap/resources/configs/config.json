@@ -4,7 +4,7 @@
             "rowCss":"",
             "columns":[
                 {
-                    "column":"col-md-2 col-sm-4",
+                    "column":"col-md-2 col-sm-4 col-xs-12",
                     "columnCss":"extraCSS",
                     "isSimple":true,
                     "widget": {
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "column":"col-md-2 col-sm-4",
+                    "column":"col-md-2 col-sm-4 col-xs-12",
                     "columnCss":"extraCSS",
                     "isSimple":true,
                     "widget": {
@@ -26,7 +26,7 @@
                     }
                 },
                 {
-                    "column":"col-md-2 col-sm-4",
+                    "column":"col-md-2 col-sm-4 col-xs-12",
                     "columnCss":"extraCSS",
                     "isSimple":true,
                     "widget": {
@@ -37,7 +37,7 @@
                     }
                 },
                 {
-                    "column":"col-md-2 col-sm-4",
+                    "column":"col-md-2 col-sm-4 col-xs-12",
                     "columnCss":"extraCSS",
                     "isSimple":true,
                     "widget": {
@@ -48,7 +48,7 @@
                     }
                 },
                 {
-                    "column":"col-md-2 col-sm-4",
+                    "column":"col-md-2 col-sm-4 col-xs-12",
                     "columnCss":"extraCSS",
                     "isSimple":true,
                     "widget": {
@@ -59,7 +59,7 @@
                     }
                 },
                 {
-                    "column":"col-md-2 col-sm-4",
+                    "column":"col-md-2 col-sm-4 col-xs-12",
                     "columnCss":"extraCSS",
                     "isSimple":true,
                     "widget": {
@@ -76,11 +76,13 @@
             "columns":[
                 {
 
-                    "column":"col-md-4 col-sm-12",
+                    "column":"col-md-4 col-sm-12 col-xs-12",
                     "columnCss":"extraCSS",
                     "directive": "testing-dynamic-creation",
-                    "isPanel":true,
+                    "isPanelTable":true,
                     "widget": {
+                        "isLoading":"loading",
+                        "noDataFound":"noDataFound",
                         "widgetName": "Testing",
                         "widgetControls": [
                             {
@@ -102,6 +104,150 @@
                             "columns":["Name","Age","Class","Division"],
                             "columndefs":"columndefs",
                             "rowsObject":"data"
+                        }
+                    }
+                },
+                {
+                    "column":"col-md-4 col-sm-12 col-xs-12",
+                    "columnCss":"extraCSS",
+                    "directive": "testing-dynamic-charts",
+                    "isPanelChart":true,
+                    "widget": {
+                        "isLoading":"loading",
+                        "widgetName": "Testing Charts",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise=''"
+                            }
+                        ],
+                        "bodyClasses": "layout-testing-widget",
+                        "headerClasses": "",
+                        "panelClasses": "",
+                        "directive":{
+                            "type":"ui-simple-graph"
+                        }
+                    }
+                },
+                {
+                    "column":"col-md-4 col-sm-12 col-xs-12",
+                    "columnCss":"extraCSS",
+                    "directive": "testing-dynamic-charts-date-time=''",
+                    "isPanelChart":true,
+                    "widget": {
+                        "isLoading":"loading",
+                        "widgetName": "Testing Charts With Date Time Axis",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise=''"
+                            }
+                        ],
+                        "bodyClasses": "layout-testing-widget",
+                        "headerClasses": "",
+                        "panelClasses": "",
+                        "directive":{
+                            "type":"ui-graph-datetime"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "rowCss":"",
+            "columns":[
+                {
+
+                    "column":"col-md-4 col-sm-12 col-xs-12",
+                    "columnCss":"extraCSS",
+                    "directive": "testing-progress-bars=''",
+                    "isPanelProgress":true,
+                    "widget": {
+                        "isLoading":"loading",
+                        "noDataFound":"noDataFound",
+                        "widgetName": "Testing",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise=''"
+                            }
+                        ],
+                        "bodyClasses": "layout-testing-widget",
+                        "headerClasses": "",
+                        "panelClasses": "",
+                        "directive":{
+                            "type":"progress-bars",
+                            "containerCss":"row"
+                        }
+                    }
+                },
+                {
+
+                    "column":"col-md-4 col-sm-12 col-xs-12",
+                    "columnCss":"extraCSS",
+                    "directive": "",
+                    "isPanelTabs":true,
+                    "widget": {
+                        "isLoading":"loading",
+                        "noDataFound":"noDataFound",
+                        "widgetName": "Testing",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise=''"
+                            }
+                        ],
+                        "bodyClasses": "layout-testing-widget",
+                        "headerClasses": "",
+                        "panelClasses": "",
+                        "directive":{
+                            "type":"ui-tabs",
+                            "containerCss":"row"
+                        }
+                    }
+                },
+                {
+
+                    "column":"col-md-4 col-sm-12 col-xs-12",
+                    "columnCss":"extraCSS",
+                    "directive": "",
+                    "isPanelTabs":true,
+                    "widget": {
+                        "isLoading":"loading",
+                        "noDataFound":"noDataFound",
+                        "widgetName": "Testing",
+                        "widgetControls": [
+                            {
+                                "classNames": "",
+                                "directive": "filter-date"
+                            },
+                            {
+                                "classNames": "",
+                                "directive": "filter-maximise=''"
+                            }
+                        ],
+                        "bodyClasses": "layout-testing-widget",
+                        "headerClasses": "",
+                        "panelClasses": "",
+                        "directive":{
+                            "type":"ui-carousel",
+                            "containerCss":"row"
                         }
                     }
                 }

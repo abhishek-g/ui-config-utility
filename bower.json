@@ -1,0 +1,26 @@
+{
+  "name": "grunt-task-setup",
+  "version": "0.0.0",
+  "homepage": "https://github.com/abhishek-g/ui-config-utility",
+  "authors": [
+    "abhishek_goray <abhishek.goray@gmail.com>"
+  ],
+  "main": "app.js",
+  "keywords": [
+    "vendor",
+    "libs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-daterangepicker": "~0.1.16",
+    "angular": "~1.4.1",
+    "bootstrap": "~3.3.5"
+  }
+}

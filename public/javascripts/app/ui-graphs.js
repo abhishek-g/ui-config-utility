@@ -24,7 +24,7 @@
     };
 
 
-    angular.module('ui-controls',[])
+    angular.module('ui-controls',['daterangepicker'])
         .directive("progressValue", ['$timeout', function ($timeout) {
             return {
                 restrict: "AC",
@@ -72,6 +72,26 @@
                     $timeout(function(){
                         scope.loading = false;
                     },2000);
+                }
+            }
+        }])
+        .directive("filterMaximise", ['$timeout', function ($timeout) {
+            return {
+                template: '<a href="#" class="panel-fullscreen js-resize" style="border: none">' +
+                    '<span class="maximise ng-isolate-scope theme-maximise"></span></a>',
+                link: function (scope, elem, attrs) {
+                }
+            }
+        }])
+        .directive("filterDate", ['$timeout', function ($timeout) {
+            return {
+                restrict: 'EA',
+                template: '<a href="#" class="dropdown-toggle no-border"><span class="theme-filterdd" date-range-picker="" ng-model="date" options="opts"></span></a>',
+                link: function (scope, elem, attrs) {
+
+                    scope.date={
+                        fromDate:moment().startOf('date'),endDate:moment().endOf('date')
+                    };
                 }
             }
         }]);

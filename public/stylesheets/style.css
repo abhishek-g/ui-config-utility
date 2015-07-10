@@ -65,3 +65,11 @@
 .nav-tabs, .nav-tabs.nav-justified{
     margin-top: 0px !important;
 }
+
+.range_inputs { font-size: 0px; }
+.range_inputs * { display: none; }
+.ranges li:last-child { display: none; }
+
+.table-responsive{
+    overflow-x: hidden !important;
+}

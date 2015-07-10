@@ -9,16 +9,48 @@
     <link rel="stylesheet" href="/modules/global/css/global.css">
     <link rel="stylesheet" href="/modules/dashboard/css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
 </head>
 <body ng-controller="TestController">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Solarpulse</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="">Dashboard</a></li>
+                    <li><a href="">Alarms</a></li>
+                    <li><a href="">Tools</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
 
-
-<div class="container-fluid" ng-include="'/templates/views/source.html'"></div>
+<div class="theme-body container-fluid" ng-include="'/templates/views/source.html'"></div>
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+<script src="/javascripts/vendor/highcharts/highcharts.js"></script>
+<script src="/javascripts/vendor/underscore/underscore.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
+<script src="/javascripts/app/ui-graphs.js"></script>
 <script src="/javascripts/app/app.js"></script>
+
 </body>
 </html>
